@@ -1,0 +1,17 @@
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root type="javafx.scene.layout.StackPane"
+         xmlns:fx="http://javafx.com/fxml" alignment="center"
+         styleClass="container">
+    <stylesheets>
+        <URL value="@LogOutput.css"/>
+    </stylesheets>
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+    <TextArea fx:id="content" editable="false"/>
+</fx:root>
