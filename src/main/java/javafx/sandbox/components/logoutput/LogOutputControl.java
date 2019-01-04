@@ -1,5 +1,6 @@
 package javafx.sandbox.components.logoutput;
 
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -28,11 +29,9 @@ public class LogOutputControl extends StackPane implements Initializable {
         content.setText("");
     }
 
-    public void setText(String text) {
-        this.content.setText(text);
+    public void bindText(ObservableValue<String> observable) {
+        this.content.textProperty().bind(observable);
     }
-
-    private String text;
 
     @FXML
     private TextArea content;
